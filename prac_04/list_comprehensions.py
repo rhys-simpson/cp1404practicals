@@ -1,6 +1,8 @@
 """
 CP1404/CP5632 Practical
 List comprehensions
+
+Rhys Simpson
 """
 
 names = ["Bob", "Angel", "Jimi", "Alan", "Ada"]
