@@ -10,7 +10,6 @@ CODE_TO_NAME = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern T
 print(CODE_TO_NAME)
 
 # loop to print all state codes and names
-state_code = [name for name in CODE_TO_NAME]
 for state_code in CODE_TO_NAME:
     print("{:<3} is {}".format(state_code, CODE_TO_NAME[state_code]))
 
