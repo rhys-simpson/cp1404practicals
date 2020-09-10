@@ -5,7 +5,7 @@ billing days
 
 Rhys Simpson
 """
-# TODO
+# TODO complete
 print("Electricity Bill Calculator 2.0")
 TARIFFS = {"11": 0.244618, "TARIFF_12": 0.213456, "13": 0.136928, "14": 0.114678, "15": 0.094567}
 price = 0
