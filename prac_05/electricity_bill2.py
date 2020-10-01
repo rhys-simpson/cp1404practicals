@@ -6,13 +6,13 @@ billing days
 Rhys Simpson
 """
 print("Electricity Bill Calculator 2.0")
-TARIFFS = {"TARIFF_11": 0.244618, "TARIFF_12": 0.213456, "13": 0.136928, "14": 0.114678, "15": 0.094567}
-print("List of Tariffs: {}".format(TARIFFS))
+TARIFFS_VALUE = {"TARIFF_11": 0.244618, "TARIFF_12": 0.213456, "13": 0.136928, "14": 0.114678, "15": 0.094567}
+print("List of Tariffs: {}".format(TARIFFS_VALUE))
 
 price = 0
 tariff = input("Which tariff? ")
-if tariff in TARIFFS:
-    price += TARIFFS[tariff]
+if tariff in TARIFFS_VALUE:
+    price += TARIFFS_VALUE[tariff]
 else:
     print("Invalid tariff")
     exit()
