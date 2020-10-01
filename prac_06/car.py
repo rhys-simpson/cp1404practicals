@@ -17,7 +17,7 @@ class Car:
         self.fuel = fuel
         self.odometer = 0
 
-    def __string__(self):
+    def __str__(self):
         """Return a string of Car object"""
         return "{}, fuel={}, odometer={}".format(self.name, self.fuel, self.odometer)
 
