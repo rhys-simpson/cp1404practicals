@@ -10,20 +10,19 @@ CONSONANTS = "bcdfghjklmnpqrstvwxyz"
 
 
 def main():
-    word = is_valid_format()
-    print(word)
+    word_format = input("Enter a word consisting of c's & v's: ")
+    while word_format == "":
+        print("Enter a valid word")
+        word_format = input("Enter a word consisting of c's & v's: ")
+    print(is_valid_format(word_format))
 
 
-def is_valid_format():
-    word_format = input("Enter a letter: ")
-    word = ""
+def is_valid_format(word_format):
     for kind in word_format:
-        if kind == "c":
-            word += random.choice(CONSONANTS)
-        elif kind == "v":
-            word += random.choice(VOWELS)
-        else:
+        if kind != "c" and kind != "v":
             return False
+    else:
+        return True
 
 
 main()
