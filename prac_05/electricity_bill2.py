@@ -5,18 +5,17 @@ billing days
 
 Rhys Simpson
 """
-# TODO complete
 print("Electricity Bill Calculator 2.0")
-TARIFFS = {"11": 0.244618, "TARIFF_12": 0.213456, "13": 0.136928, "14": 0.114678, "15": 0.094567}
-price = 0
+TARIFFS = {"TARIFF_11": 0.244618, "TARIFF_12": 0.213456, "13": 0.136928, "14": 0.114678, "15": 0.094567}
+print("List of Tariffs: {}".format(TARIFFS))
 
+price = 0
 tariff = input("Which tariff? ")
-while tariff != "":
-    if tariff in TARIFFS:
-        price = TARIFFS.get(tariff, 1)
-    else:
-        print("Invalid tariff")
-        exit()
+if tariff in TARIFFS:
+    price += TARIFFS[tariff]
+else:
+    print("Invalid tariff")
+    exit()
 
 daily_use = float(input("Enter daily use in kWh: "))
 if daily_use > 24:  # No more than 24 hours in a day
