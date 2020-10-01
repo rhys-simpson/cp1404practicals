@@ -2,8 +2,6 @@
 CP1404
 Random word generator
 """
-# TODO error checking
-import random
 
 VOWELS = "aeiou"
 CONSONANTS = "bcdfghjklmnpqrstvwxyz"
