@@ -1,5 +1,5 @@
 """
-CP1404 Practical - test person class
+CP1404 Practical - test the person class
 Rhys Simpson
 """
 
