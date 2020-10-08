@@ -20,7 +20,6 @@ def main():
             print_address(name_address)
         else:
             print("Invalid menu choice")
-        print(MENU)
         choice = input(MENU).upper()
     print("Have a nice day!")
     quit()
