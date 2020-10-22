@@ -61,5 +61,5 @@ def demo_walk():
             os.rename(file_name, new_name)
 
 
-# main()
-demo_walk()
+main()
+# demo_walk()
