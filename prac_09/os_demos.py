@@ -2,6 +2,7 @@
 CP1404 Practical
 Demos of various os module examples
 """
+
 import shutil
 import os
 
@@ -54,7 +55,6 @@ def demo_walk():
         print("\tcontains subdirectories:", subdirectories)
         print("\tand files:", filenames)
         print("(Current working directory is: {})".format(os.getcwd()))
-
         for filename in filenames:
             file_name = os.path.join(directory_name, filename)
             new_name = os.path.join(directory_name, get_fixed_filename(filename))

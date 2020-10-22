@@ -16,7 +16,7 @@ def main():
         if os.path.isdir(filename):
             continue
 
-        extension = filename.split(".")[-1]
+        extension = filename.split(".")[1]
 
         try:
             os.mkdir(extension)
